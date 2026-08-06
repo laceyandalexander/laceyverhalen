@@ -1,0 +1,123 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles & Typography */
+body {
+    /* Using a standard conceptual design font stack */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Header */
+.site-header {
+    margin-bottom: 2rem;
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+/* Intro Section */
+.intro {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+.site-nav {
+    margin-bottom: 4rem;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Events & News Title */
+.section-title {
+    margin-bottom: 2rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Event List (Grid Layout) */
+.event-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.event-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.5rem;
+}
+
+/* Remove border from last item */
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-name {
+    font-weight: 500;
+}
+
+.event-location {
+    text-align: right;
+    color: #555;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .event-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .event-location {
+        text-align: left;
+    }
+    
+    .site-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
