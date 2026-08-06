@@ -7,9 +7,9 @@
 
 /* Base Styles & Typography */
 body {
-    /* Using a standard conceptual design font stack */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    /* Updated to Times New Roman */
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px; /* Slightly larger for better readability with serif fonts */
     line-height: 1.5;
     background-color: #ffffff;
     color: #000000;
@@ -28,7 +28,7 @@ body {
 }
 
 .site-header h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: normal;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ body {
 /* Intro Section */
 .intro {
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /* Navigation */
@@ -59,7 +59,7 @@ body {
 .site-nav a {
     text-decoration: none;
     color: #000000;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .site-nav a:hover {
@@ -69,7 +69,8 @@ body {
 /* Events & News Title */
 .section-title {
     margin-bottom: 2rem;
-    font-family: monospace;
+    /* Keeping the section title monospaced for contrast, or change to inherit */
+    font-family: monospace; 
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -97,12 +98,13 @@ body {
 }
 
 .event-name {
-    font-weight: 500;
+    font-weight: bold; /* Bold looks better on Times New Roman than medium weight */
 }
 
 .event-location {
     text-align: right;
     color: #555;
+    font-style: italic; /* Adding italic for locations adds a nice editorial touch */
 }
 
 /* Responsive adjustments for smaller screens */
