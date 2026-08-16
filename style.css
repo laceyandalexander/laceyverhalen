@@ -51,24 +51,16 @@ a:hover {
     display: block;
 }
 
-/* Utility Italic Class */
+/* Utility Classes */
 .italic {
     font-style: italic;
 }
 
-/* Section Header (Selected Work / Events Title) */
-.section-title,
-.events-header {
-    margin-top: 10px;
-    margin-bottom: 35px;
+.bold {
+    font-weight: bold;
 }
 
-.events-header {
-    font-style: italic;
-    margin-top: 50px;
-}
-
-/* Spacing Layout */
+/* Layout Spacing */
 .intro {
     margin-bottom: 35px;
 }
@@ -77,31 +69,25 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.spacer-medium {
-    margin-top: 35px;
+.events-header {
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 35px;
 }
 
-/* List Item Spacing */
+/* Fixes Event Clumping */
 .events-container {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
+    display: block;
+}
+
+.event-item {
+    margin-bottom: 35px; /* Creates spacing between each event block */
+}
+
+.event-item:last-child {
+    margin-bottom: 0;
 }
 
 .event-item p {
     line-height: 36px;
-}
-
-/* Tiles Page Gallery Layout */
-.tiles-gallery {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Vertical space between tile photos */
-}
-
-.tiles-gallery img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
