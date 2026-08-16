@@ -91,3 +91,18 @@ a:hover {
 .event-item p {
     line-height: 36px;
 }
+
+/* Vertical layout for displayed images */
+.tiles-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between each image */
+    margin-top: 30px;
+}
+
+.tiles-image-container img {
+    width: 1080px;
+    max-width: 100%; /* Keeps images responsive on smaller screens */
+    height: auto;
+    display: block;
+}
