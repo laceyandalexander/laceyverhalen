@@ -91,3 +91,17 @@ a:hover {
 .event-item p {
     line-height: 36px;
 }
+
+/* Tiles Page Gallery Layout */
+.tiles-gallery {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Vertical space between tile photos */
+}
+
+.tiles-gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
