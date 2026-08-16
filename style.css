@@ -56,7 +56,19 @@ a:hover {
     font-style: italic;
 }
 
-/* Layout Spacing */
+/* Section Header (Selected Work / Events Title) */
+.section-title,
+.events-header {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.events-header {
+    font-style: italic;
+    margin-top: 50px;
+}
+
+/* Spacing Layout */
 .intro {
     margin-bottom: 35px;
 }
@@ -65,17 +77,15 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.events-header {
-    font-style: italic;
-    margin-top: 50px;
-    margin-bottom: 35px;
+.spacer-medium {
+    margin-top: 35px;
 }
 
-/* Events Section Spacing */
+/* List Item Spacing */
 .events-container {
     display: flex;
     flex-direction: column;
-    gap: 45px; /* Adjust this to increase/decrease space between separate events */
+    gap: 45px;
 }
 
 .event-item p {
