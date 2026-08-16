@@ -28,7 +28,7 @@ a:link {
     font-family: inherit;
     font-size: inherit;
     color: rgba(0, 0, 0, 0.85);
-    text-decoration: underline; /* Displays underlined links matching the mockup */
+    text-decoration: none;
     font-style: normal;
 }
 
@@ -51,29 +51,43 @@ a:hover {
     display: block;
 }
 
-/* Utility Classes */
+/* Utility Italic Class */
 .italic {
     font-style: italic;
 }
 
-.bold {
-    font-weight: bold;
+/* Section Header (Selected Work / Events Title) */
+.section-title,
+.events-header {
+    margin-top: 10px;
+    margin-bottom: 35px;
 }
 
-/* Header Grid Layout for Tiles Page */
-.tiles-header-grid {
-    display: flex;
-    gap: 80px; /* Space between navigation and "Selected Work" header */
-    margin-bottom: 40px;
+.events-header {
+    font-style: italic;
+    margin-top: 50px;
 }
 
-/* Image Links Stack */
-.tiles-links-container {
+/* Spacing Layout */
+.intro {
+    margin-bottom: 35px;
+}
+
+.nav-group {
+    margin-bottom: 30px;
+}
+
+.spacer-medium {
+    margin-top: 35px;
+}
+
+/* List Item Spacing */
+.events-container {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Space between link blocks */
+    gap: 45px;
 }
 
-.tile-link-block p {
+.event-item p {
     line-height: 36px;
 }
