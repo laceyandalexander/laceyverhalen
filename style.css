@@ -7,20 +7,20 @@ html {
 body {
     font-family: "Times New Roman", Times, serif;
     font-size: 27px;
-    line-height: 36px; /* Matches exact design spec */
+    line-height: 36px;
     font-weight: 400;
     margin: 40px;
-    color: rgba(0, 0, 0, 0.85); /* Off-black softened color */
+    color: rgba(0, 0, 0, 0.85);
     background-color: #ffffff;
 }
 
-/* Reset default paragraph margins */
+/* Base Paragraph Reset */
 p {
     margin: 0;
     padding: 0;
 }
 
-/* Link Styling */
+/* Strict Link Styling */
 a, 
 a:visited, 
 a:active, 
@@ -51,12 +51,12 @@ a:hover {
     display: block;
 }
 
-/* Italics Helper */
+/* Utility Italic Class */
 .italic {
     font-style: italic;
 }
 
-/* Spacing Layout */
+/* Layout Spacing */
 .intro {
     margin-bottom: 35px;
 }
@@ -71,11 +71,11 @@ a:hover {
     margin-bottom: 35px;
 }
 
-/* Stacked Events Section */
+/* Events Section Spacing */
 .events-container {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 45px; /* Adjust this to increase/decrease space between separate events */
 }
 
 .event-item p {
