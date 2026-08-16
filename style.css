@@ -1,35 +1,41 @@
-/* Base Page Styles */
+/* Enable smooth font rendering for a thinner appearance */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 27px;
-    line-height: 1.35;
+    line-height: 36px; /* Matches exact design spec */
+    font-weight: 400;
     margin: 40px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.85); /* Off-black softened color */
     background-color: #ffffff;
 }
 
-/* Reset Paragraph Margins */
+/* Reset default paragraph margins */
 p {
     margin: 0;
     padding: 0;
 }
 
-/* Strict Link Styling - Forces 27px, Black Color, No Underline */
+/* Link Styling */
 a, 
 a:visited, 
 a:active, 
 a:link {
     font-family: inherit;
     font-size: inherit;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.85);
     text-decoration: none;
     font-style: normal;
 }
 
-/* Link Hover Effect - Changes to Italic */
+/* Link Hover Effect */
 a:hover {
     font-style: italic;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.85);
 }
 
 /* Logo */
@@ -45,12 +51,12 @@ a:hover {
     display: block;
 }
 
-/* Utility Italic Class */
+/* Italics Helper */
 .italic {
     font-style: italic;
 }
 
-/* Layout Spacing */
+/* Spacing Layout */
 .intro {
     margin-bottom: 35px;
 }
@@ -73,5 +79,5 @@ a:hover {
 }
 
 .event-item p {
-    line-height: 1.3;
+    line-height: 36px;
 }
