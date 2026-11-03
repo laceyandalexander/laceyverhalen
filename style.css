@@ -95,18 +95,18 @@ a:hover {
 .tiles-image-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   gap: 32px;
-  margin: 40px auto;
+  margin: 40px 0; /* Removed 'auto' to pin the container to the left */
   padding: 0 20px;
-  max-width: 760px; /* Reduced from 1080px */
+  max-width: 760px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .tiles-image-container img {
   width: 100%;
-  max-width: 760px; /* Matches container max-width */
+  max-width: 760px;
   height: auto;
   display: block;
 }
