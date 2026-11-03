@@ -92,17 +92,21 @@ a:hover {
     line-height: 36px;
 }
 
-/* Vertical layout for displayed images */
 .tiles-image-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px; /* Space between each image */
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 760px; /* Reduced from 1080px */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tiles-image-container img {
-    width: 1080px;
-    max-width: 100%; /* Keeps images responsive on smaller screens */
-    height: auto;
-    display: block;
+  width: 100%;
+  max-width: 760px; /* Matches container max-width */
+  height: auto;
+  display: block;
 }
